@@ -1,0 +1,444 @@
+
+.DescrOfMap{
+		margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+
+
+form {text-align:center;}
+
+.map
+{
+    position: relative;
+    text-align: center;
+}
+svg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99.5%;
+    width: 100%;
+}
+path
+{
+    opacity: 0.4;
+    fill: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+path:hover
+{
+    opacity: 0.95;
+    transition: 0.8s;
+    fill: orange;
+}
+.description{
+	display: none;
+	position: absolute;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 200px;
+	height: 335px;
+	box-shadow: 0 0 32px 10px #ccc;
+	right: 50px;
+	top: 120px;
+	font-family: sans-serif;
+}
+
+
+.description img{
+	width: 160px;
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+.visited{
+	position: absolute;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 200px;
+	height: 300px;
+	left: 50px;
+	top: 120px;
+	font-family: sans-serif;
+	margin-top: 42px;
+}
+
+.visitedCountry{
+		position: absolute;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 200px;
+	height: 300px;
+	left: 50px;
+	top: 120px;
+	font-family: sans-serif;
+	margin-top: 150px;
+}
+
+
+.part{
+	opacity: .3;
+}
+.part:hover{
+	transition: opacity .2s ease;
+	opacity: .5;
+	cursor: pointer;
+}
+
+
+#header-featured
+{
+		padding: 10em 0em;
+		background-image: url(/static/page.jpg);
+		background-position: center;
+		background-size: cover;
+}
+
+#header-featured-about{
+	padding: 10em 0em;
+	background-image: url(/static/about.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#header-featured-contact{
+	padding: 10em 0em;
+	background-image: url(/static/contact.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#header-featured-map{
+	padding: 32em 3em;
+	background-position: center;
+	background-size: cover;
+}
+form {
+	text-align:center;
+
+}
+
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #6c6c6c;
+
+	background: #2b2b2b;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #454445;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+
+a
+{
+	color: #2C383B;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+	.button
+{
+	display: inline-block;
+	padding: 1.3em 3em;
+	background: #8dc63f;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #FFF;
+}
+
+.button:hover
+{
+	background: #86bd3b;
+}
+
+.button:active
+{
+}
+
+.button-big
+{
+	padding: 1.6em 4em;
+	font-size: 1.4em;
+	font-weight: 900;
+}
+
+
+	.title
+{
+	margin-bottom: 3em;
+}
+
+.title h2
+{
+	font-weight: 400;
+	font-size: 2.8em;
+	color: #323232;
+}
+
+.title .byline
+{
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.1em;
+	color: #6F6F6F;
+}
+
+
+
+
+#header-wrapper
+{
+	background: #2b2b2b;
+}
+
+#header
+{
+	position: relative;
+	height: 100px;
+}
+
+
+#logo
+{
+	position: absolute;
+	top: 2em;
+	width: 100%;
+}
+
+#logo h1
+{
+	display: inline-block;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ED7070;
+	padding-right: 0.50em;
+	border-right: 1px solid rgba(0,0,0,.1);
+}
+
+#logo span
+{
+	display: inline-block;
+	padding-right: .50em;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+	font-size: 0.90em;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+#logo .fa
+{
+	color: #8dc63f;
+}
+
+#logo .fa:after
+{
+	position: absolute;
+	display: inline-block;
+	padding-right: 2em;
+}
+
+
+#menu
+{
+	position: absolute;
+	right: 0;
+	top: 1.6em;
+}
+
+#menu ul
+{
+	display: inline-block;
+}
+
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span
+{
+	display: inline-block;
+	margin-left: 1px;
+	padding: 1em 1.5em 0em 1.5em;
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	outline: 0;
+	color: #FFF;
+}
+
+
+#menu .current_page_item a
+{
+	color: #8dc63f;
+}
+
+#banner
+{
+	overflow: hidden;
+	width: 1000px;
+	text-align: center;
+	color: black;
+	font-size: 1.5em;
+}
+
+#banner a
+{
+	color: rgba(255,255,255,.9);
+}
+
+#banner h2
+{
+	padding-bottom: 0.50em;
+	font-weight: 400;
+	font-size: 3em;
+	color: black;
+}
+#banner p
+{
+	color: black;
+}
+
+#banner .button
+{
+	margin-top: 2em;
+	color: black;
+	background: #FFEBCD;
+}
+
+#banner strong
+{
+	color: #FFF;
+}
+
+#banner span
+{
+	display: block;
+	padding-top: 0.20em;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #A2A2A2;
+}
+
+
+
+#wrapper
+{
+	background: #FFF;
+}
+
+#page
+{
+	overflow: hidden;
+	padding: 6em 0em;
+	border-bottom: 2px solid #E3E3E3;
+	text-align: center;
+}
+
+#page .button
+{
+	margin-top: 2em;
+}
+
+
+#content
+{
+	padding: 0em 7em;
+}
+
+#sidebar
+{
+	float: right;
+	width: 450px;
+}
+
+#stwo-col
+{
+	margin-top: 2em;
+}
+
+#stwo-col h2
+{
+	display: block;
+	padding-bottom: 1.5em;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #454445;
+}
+
+#stwo-col .sbox1
+{
+	float: left;
+	width: 210px;
+}
+
+#stwo-col .sbox2
+{
+	float: right;
+	width: 210px;
+}
+
